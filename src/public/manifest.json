@@ -1,0 +1,61 @@
+{
+    "name": "Catatan Wisata",
+    "short_name": "Cavis",
+    "description": "Aplikasi catatan yang menyertakan lokasi dan destinasi yang sudah kita lewati",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#121212",
+    "background_color": "#121212",
+    "icons": [
+      {
+        "src": "/images/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Lihat Catatan Terbaru",
+        "short_name": "Terbaru",
+        "description": "Lihat daftar catatan perjalanan terbaru",
+        "url": "/"
+      },
+      {
+        "name": "Tambah Catatan Baru",
+        "short_name": "Tambah",
+        "description": "Buat dan simpan catatan perjalanan baru",
+        "url": "/tambah"
+      },
+      {
+        "name": "Cari Lokasi",
+        "short_name": "Cari",
+        "description": "Cari catatan berdasarkan lokasi",
+        "url": "/cari"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/screenshots/homescreen.png",
+        "sizes": "640x480",
+        "type": "image/png",
+        "label": "Tampilan utama daftar catatan"
+      },
+      {
+        "src": "/images/screenshots/add_note.png",
+        "sizes": "320x568",
+        "type": "image/png",
+        "label": "Halaman untuk menambahkan catatan baru"
+      },
+      {
+        "src": "/images/screenshots/detail_note.png",
+        "sizes": "480x640",
+        "type": "image/png",
+        "label": "Tampilan detail catatan"
+      }
+    ]
+  }
