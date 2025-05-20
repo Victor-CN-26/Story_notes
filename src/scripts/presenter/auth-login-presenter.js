@@ -13,7 +13,8 @@ export const handleLogin = async (event, showPopup) => {
     showPopup("Login successful!", true);
 
     setTimeout(() => {
-      window.location.href = "/home";
+      // Ganti window.location.href dengan window.location.hash
+      window.location.hash = '/'; // Atau '/home' jika itu rute beranda Anda
     }, 1500);
   } catch (error) {
     showPopup(`Error: ${error.message}`);
