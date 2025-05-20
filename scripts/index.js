@@ -1,6 +1,6 @@
 import "../styles/styles.css";
 import App from "./pages/app";
-import router from "./routes/routes";
+import router from "./routes/routes"; // Perbaiki path import untuk router
 
 document.addEventListener("DOMContentLoaded", async () => {
   const app = new App({
