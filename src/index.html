@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <title>App</title>
+
+    <script type="module" src="/scripts/index.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header>
+        <div class="main-header container">
+            <a class="brand-name" href="#/">App</a>
+
+            <nav id="navigation-drawer" class="navigation-drawer">
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="#/">Beranda</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <script>
+                        if (!localStorage.getItem('authToken')) {
+                            // Pengguna belum login, tampilkan Login dan Register
+                            document.write('<li><a href="#/login">Login</a></li>');
+                            document.write('<li><a href="#/register">Register</a></li>');
+                        } else {
+                            // Pengguna sudah login, sembunyikan Login dan Register, tampilkan yang lain
+                            document.write('<li><a href="#/add-story">Add Story</a></li>');
+                            document.write('<li><a href="#/logout">Logout</a></li>');
+                        }
+                    </script>
+                </ul>
+            </nav>
+
+            <button id="drawer-button" class="drawer-button">☰</button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+    <footer role="contentinfo" class="footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
